@@ -27,31 +27,31 @@ const Projects = () => {
             backgroundImg={hsbcInsuranceUK}
             title="HSBC Insurance UK/HK"
             tech="ReactJS/Java/AngularJS/Jest/HTML/CSS"
-            projectUrl="/crypto"
+            projectUrl="/peoplelink"
           />
           <ProjectItem
             backgroundImg={LearningMate}
             title="LearningMate(Client)"
             tech="ReactJS/NodeJS/.Net/HTML/CSS/Jest"
-            projectUrl="/nextflix"
+            projectUrl="/peoplelink"
           />
           <ProjectItem
             backgroundImg={feelitlive}
             title="FeelitLIVE"
             tech="ReactJS/NextJS/NodeJS/MongoDB"
-            projectUrl="/twitch"
+            projectUrl="/peoplelink"
           />
           <ProjectItem
             backgroundImg={zoonga}
             title="Zoonga"
             tech="ReactJS/NodeJS/TypeScript/HTML/CSS"
-            projectUrl="/twitch"
+            projectUrl="/peoplelink"
           />
           <ProjectItem
             backgroundImg={liveSignBermuda}
             title="LiveSign Bermuda"
             tech="ReactJS/.Net/HTML/CSS/SQL"
-            projectUrl="/twitch"
+            projectUrl="/peoplelink"
           />
         </div>
       </div>

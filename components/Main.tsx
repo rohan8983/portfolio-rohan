@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -23,20 +24,32 @@ export default function () {
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <a href="https://www.linkedin.com/in/rohan-chougule-5a5210138/">
-                <FaLinkedinIn />
-              </a>
+              <Link
+                href="https://www.linkedin.com/in/rohan-chougule-5a5210138/"
+                passHref
+                legacyBehavior
+              >
+                <a target="_blank" rel="noopener noreferrer">
+                  <FaLinkedinIn />
+                </a>
+              </Link>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <a href="https://github.com/rohan8983">
-                <FaGithub />
-              </a>
+              <Link href="https://github.com/rohan8983" passHref legacyBehavior>
+                <a target="_blank" rel="noopener noreferrer">
+                  <FaGithub />
+                </a>
+              </Link>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <AiOutlineMail />
+              <Link href="mailto:rohan.chougule@hotmail.com">
+                <AiOutlineMail />
+              </Link>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <BsFillPersonLinesFill />
+              <Link href="/">
+                <BsFillPersonLinesFill />
+              </Link>
             </div>
           </div>
         </div>

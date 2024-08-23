@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -52,7 +53,7 @@ export default function NavBar() {
         <Link href="/">
           <Image
             src="/assets/navLogo.png"
-            alt="/"
+            alt="navLogo"
             width="50"
             height="50"
             placeholder="empty"
@@ -155,16 +156,36 @@ export default function NavBar() {
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaLinkedin />
+                  <Link
+                    href="https://www.linkedin.com/in/rohan-chougule-5a5210138/"
+                    passHref
+                    legacyBehavior
+                  >
+                    <a target="_blank" rel="noopener noreferrer">
+                      <FaLinkedin />
+                    </a>
+                  </Link>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaGithub />
+                  <Link
+                    href="https://github.com/rohan8983"
+                    passHref
+                    legacyBehavior
+                  >
+                    <a target="_blank" rel="noopener noreferrer">
+                      <FaGithub />
+                    </a>
+                  </Link>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineMail />
+                  <Link href="mailto:rohan.chougule@hotmail.com">
+                    <AiOutlineMail />
+                  </Link>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BsPersonLinesFill />
+                  <Link href="/">
+                    <BsPersonLinesFill />
+                  </Link>
                 </div>
               </div>
             </div>
